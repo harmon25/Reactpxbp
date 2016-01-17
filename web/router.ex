@@ -44,8 +44,18 @@ defmodule Reactpxbp.Router do
   end
 
 
-  scope "/api", Reactpxbp do
+  scope "/graphql" do
     pipe_through :api
+    
+    get  "/hello", GraphQL.Plug.Endpoint, schema: {GraphQL.Schema.HelloWorld, :schema}
+    post "/hello", GraphQL.Plug.Endpoint, schema: {GraphQL.Schema.HelloWorld, :schema}
+
+  end
+
+
+  scope "/jsonapi", Reactpxbp do
+    pipe_through :api
+
     post "/login", AuthController, :login_api
   end
   

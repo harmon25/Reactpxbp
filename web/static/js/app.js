@@ -20,18 +20,20 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-import React from "react"
-import ReactDOM from "react-dom"
+import { Router, Route, Link, createHashHistory, browserHistory} from 'react-router';
 
-class HelloWorld extends React.Component {
-  render() {
-    return (<div className="ui segment"><h1>Hello World!</h1></div>)
-  }
-}
+
+import ReactDOM from "react-dom"
+import React from "react"
+
+import HelloWorld from "./components/App";
+
 
 ReactDOM.render(
-  <HelloWorld/>,
-  document.getElementById("hello-world")
-
+ <Router history={browserHistory}>
+    <Route path="/home" component={HelloWorld}>
+      <Route path="*" component={NoMatch}/>
+    </Route>
+  </Router>,
+  document.body
 )
-

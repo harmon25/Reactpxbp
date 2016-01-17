@@ -36,11 +36,38 @@
     
     <script type="text/javascript">
 
+    //prevent form from submitting
+    $("#loginForm").submit(function(event){ 
+        event.preventDefault(); 
+    }); 
+
+
       // login stuff here
-      $("#loginForm").form({inline: true,fields:{
-        email: 'empty',
-        password: 'empty'
-      } })
+      $("#loginForm").form({
+        inline: true,
+        fields:{
+          email: 'empty',
+          password: 'empty'
+        },
+        onSuccess: function (events,fields) {
+          console.log(events);
+          console.log(fields);
+
+        $.ajax({
+          type: "POST",
+            url: "/jsonapi/login",
+            data: fields,
+            success: function(data, status, jxXHR){
+              console.log(data);
+              console.log(status);
+              console.log(jxXHR)
+            },
+            dataType: "json"
+          });
+
+
+        } 
+      })
 
 
     </script>

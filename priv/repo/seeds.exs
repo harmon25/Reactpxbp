@@ -9,3 +9,13 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Reactpxbp.User
+alias Reactpxbp.Register
+
+User.changeset(%User{}, %{email: "test@test.com", password: "testing"})
+|> Register.create(Reactpxbp.Repo)
+
+
+
+

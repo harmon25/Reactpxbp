@@ -3,9 +3,11 @@
   "dependencies": {
     "babel-brunch": "^6.0.0",
     "babel-preset-react": "^6.3.13",
+    "babel-relay-plugin": "^0.6.3",
     "brunch": "^2.1.1",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "css-brunch": ">= 1.0 < 1.8",
+    "history": "^2.0.0-rc2",
     "javascript-brunch": ">= 1.0 < 1.8",
     "jquery": "^2.2.0",
     "less-brunch": "^1.8.1",
@@ -13,6 +15,7 @@
     "phoenix_html": "file:deps/phoenix_html",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-router": "^2.0.0-rc5",
     "uglify-js-brunch": ">= 1.0 < 1.8"
   }
 }

@@ -38,7 +38,8 @@ defmodule Reactpxbp.Mixfile do
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:comeonin, "~> 2.0"},
-     {:guardian, "~> 0.9.0"}]
+     {:guardian, "~> 0.9.0"},
+     {:plug_graphql, "~> 0.0.7"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

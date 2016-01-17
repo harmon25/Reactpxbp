@@ -9,7 +9,7 @@ defmodule Reactpxbp.User do
     timestamps
   end
 
-  @required_fields ~w(email pw_hash)
+  @required_fields ~w(email password)
   @optional_fields ~w()
 
   @doc """
