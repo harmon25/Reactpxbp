@@ -4,7 +4,8 @@ exports.config = {
     javascripts: {
        //To use a separate vendor.js bundle, specify two files path
       // https://github.com/brunch/brunch/blob/stable/docs/config.md#files
-      joinTo: "js/app.js"
+      joinTo:  "js/app.js"
+             
 
     },
 

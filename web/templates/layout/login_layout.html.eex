@@ -8,7 +8,8 @@
     <meta name="author" content="harmon25">
 
     <title>Reactpxbp Login</title>
-  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
+
 
 
     <style type="text/css">
@@ -30,7 +31,18 @@
 
   <body>
         <%= render @view_module, @view_template, assigns %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+    
+    <script type="text/javascript">
 
-     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+      // login stuff here
+      $("#loginForm").form({inline: true,fields:{
+        email: 'empty',
+        password: 'empty'
+      } })
+
+
+    </script>
   </body>
 </html>
