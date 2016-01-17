@@ -25,7 +25,7 @@ import ReactDOM from "react-dom"
 
 class HelloWorld extends React.Component {
   render() {
-    return (<h1>Hello World!</h1>)
+    return (<div className="ui segment"><h1>Hello World!</h1></div>)
   }
 }
 

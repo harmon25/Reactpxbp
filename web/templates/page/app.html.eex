@@ -1,2 +1,1 @@
-<h1>Main App w/ React</h1>
-<div id="hello-world"></div>
+<div class="ui container" id="hello-world"></div>
