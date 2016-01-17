@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Phoenix, React, Relay, GraphQL, Channel Boilerplate">
+    <meta name="author" content="harmon25">
+
+    <title>Reactpxbp Login</title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+
+
+    <style type="text/css">
+    body {
+        background-color: #DADADA;
+      }
+      body > .grid {
+        height: 100%;
+      }
+      .image {
+        margin-top: -100px;
+      }
+      .column {
+        max-width: 450px;
+      }
+  </style>
+
+  </head>
+
+  <body>
+    <div class="ui container">
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+    </div> <!-- /container -->
+     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
